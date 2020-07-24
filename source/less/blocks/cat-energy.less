@@ -1,19 +1,28 @@
 .cat-energy {
-    background-image: url('../img/index-background-mobile@1x.jpg');
-    background-repeat: no-repeat;
-    background-position-x: center;
     font-family: 'Oswald', Arial, sans-serif;
     color: @light;
     margin-bottom: 22px;
+    position: relative;
 }
-.cat-energy__position {
-    margin: 0 auto;
-    width: 280px;
+.cat-energy::before {
+    content: "";
+    display: block;
     background-image: url('../img/index-can-mobile@1x.png');
+    width: 280px;
+    height: 270px;
+    position: absolute;
+    top: 167px;
+    left: 50%;
+    margin-left: -140px;
+}
+.cat-energy__head {
+    background-image: url('../img/index-background-mobile@1x.jpg');
+    background-position: center;
+    background-color: @index-cat-energy;
     background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: 166px;
+    height: 279px;
     padding-top: 26px;
+    margin-bottom: 135px;
 }
 .cat-energy__title {
     text-align: center;
@@ -21,6 +30,9 @@
     font-weight: normal;
     margin-bottom: 25px;
     line-height: 36px;
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 26px;
 }
 .cat-energy__cat {
     text-align: center;
@@ -33,8 +45,9 @@
     text-align: center;
     display: block;
     width: 280px;
-    height: 28px;
-    padding-top: 12px;
+    margin: 0 auto;
+    height: 29px;
+    padding-top: 10px;
     background-color: @button;
     text-transform: uppercase;
     font-size: 14px;
