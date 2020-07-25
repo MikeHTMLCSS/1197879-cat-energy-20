@@ -8,17 +8,30 @@
   <body>
     <header class="header">
       <div class="header__position">
-        <img class="header__logo" src="img/logo-mobile.svg" width="191" height="38" alt="логотип">
+        <img class="header__logo header__logo--mobile" src="img/logo-mobile.svg" width="191" height="38" alt="логотип">
+        <img class="header__logo header__logo--tablet" src="img/logo-desktop.svg" width="174" height="52" alt="логотип">
+        <img class="header__logo header__logo--desktop" src="img/logo-desktop.svg" width="202" height="59" alt="логотип">
         <button class="header__open">
           Открыть меню
         </button>
+        <div class="header__menu">
+          <a href="index.html" class="header__button header__button--opened">
+            Главная
+          </a>
+          <a href="catalog.html" class="header__button">
+            Каталог продукции
+          </a>
+          <a href="form.html" class="header__button">
+            Подбор программы
+          </a>
+        </div>
       </div>
     </header>
     <main>
       <section class="cat-energy">
         <div class="cat-energy__head">
           <h1 class="cat-energy__title">
-            Функциональное питание для котов
+            Функциональное<br>питание для котов
           </h1>
           <p class="cat-energy__cat">
             Занялся собой? Займись котом!
