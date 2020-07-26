@@ -60,7 +60,10 @@
 .catalog__item-value {
     text-align: right;
 }
-.catalog__item-image {
+.catalog__item-image--tablet, .catalog__item-image--desktop {
+    display: none;
+}
+.catalog__item-image-block {
     position: relative;
     font-size: 0;
 }
@@ -132,6 +135,41 @@
     .catalog {
         padding-top: 53px;
     }
+    .catalog__item-image--tablet {
+        display: inline-block;
+        position: absolute;
+    }
+    .catalog__item-image--chicken-500 {
+        top: -205px;
+        left: -23px;
+    }
+    .catalog__item-image--chicken-1000 {
+        top: -233px;
+        left: -23px;
+    }
+    .catalog__item-image--fish-500 {
+        top: -208px;
+        left: -23px;
+    }
+    .catalog__item-image--fish-1000 {
+        top: -238px;
+        left: -23px;
+    }
+    .catalog__item-image--buckwheat-500 {
+        top: -205px;
+        left: -23px;
+    }
+    .catalog__item-image--buckwheat-1000 {
+        top: -236px;
+        left: -23px;
+    }
+    .catalog__item-image--rice-500 {
+        top: -207px;
+        left: -23px;
+    }
+    .catalog__item-image--mobile {
+        display: none;
+    }
     .catalog__title {
         font-family: 'Oswald', Arial, sans-serif;
         font-weight: normal;
@@ -158,12 +196,10 @@
         border: none;
         margin-bottom: 140px;
         padding-top: 161px;
+        padding-bottom: 40px;
     }
     .catalog__item:not(:nth-child(2n)) {
         margin-right: 60px;
-    }
-    .catalog__item-image {
-        display: none;
     }
     .catalog__item-parameters {
         border-collapse: collapse;
@@ -171,11 +207,13 @@
         line-height: 16px;
         width: 250px;
         margin-left: 15px;
+        margin-top: 14px;
     }
     .catalog__item-caption, .catalog__item-value {
         border-bottom: 2px solid @table;
         padding-top: 7px;
         padding-bottom: 9px;
+        height: 0px;
     }
     .catalog__item-name {
         font-size: 20px;
@@ -187,5 +225,8 @@
     }
     .catalog__item-order {
         width: 248px;
+    }
+    .catalog__item-data {
+        margin-bottom: 29px;
     }
 }
