@@ -48,3 +48,66 @@
 .explanation__tool--time::before {
     background-image: url('../img/advantage-clock@1x.png');
 }
+@media (min-width: 768px) {
+    .explanation {
+        width: 708px;
+        margin: 0 auto;
+    }
+    .explanation__title {
+        font-size: 60px;
+        line-height: 60px;
+        width: auto;
+        margin: 0;
+        margin-top: 45px;
+        margin-bottom: 72px;
+    }
+    .explanation__tools {
+        width: 708px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .explanation__tool {
+        width: 245px;
+        display: block;
+        height: 169px;
+        padding-left: 0;
+        padding-top: 111px;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 36px;
+    }
+    .explanation__tool--substances, .explanation__tool--eating {
+        margin-right: 140px;
+    }
+    .explanation__tool::before {
+        width: 80px;
+        height: 80px;
+        background-repeat: no-repeat;
+    }
+    .explanation__tool::after {
+        font-family: 'Oswald', Arial, sans-serif;
+        font-weight: normal;
+        font-size: 280px;
+        line-height: 280px;
+        position: absolute;
+        top: -39px;
+        color: @footer;
+        z-index: -1;
+    }
+    .explanation__tool--substances::after {
+        content: "1";
+        left: 118px;
+    }
+    .explanation__tool--cooking::after {
+        content: "2";
+        left: 111px;
+    }
+    .explanation__tool--eating::after {
+        content: "3";
+        left: 113px;
+    }
+    .explanation__tool--time::after {
+        content: "4";
+        left: 113px;
+    }
+}
