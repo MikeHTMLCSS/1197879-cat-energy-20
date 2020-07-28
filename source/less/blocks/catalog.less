@@ -47,6 +47,7 @@
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
+    width: 76px;
 }
 .catalog__item-parameters {
     font-family: Arial, sans-serif;
@@ -59,6 +60,13 @@
 .catalog__item-value {
     text-align: right;
 }
+.catalog__item-image--tablet, .catalog__item-image--desktop {
+    display: none;
+}
+.catalog__item-image-block {
+    position: relative;
+    font-size: 0;
+}
 .catalog__item-image {
     position: relative;
 }
@@ -70,12 +78,14 @@
 }
 .catalog__item-image--fish-500 {
     top: 18px;
+    transform: scale(0.9);
 }
 .catalog__item-image--fish-1000 {
     top: 8px;
 }
 .catalog__item-image--buckwheat-500 {
     top: 20px;
+    transform: scale(0.9);
 }
 .catalog__item-image--buckwheat-1000 {
     top: 8px;
@@ -86,7 +96,7 @@
 .catalog__load {
     border-bottom: 2px solid @catalog-border;
     padding-top: 78px;
-    background-image: url('../img/icon-plus.svg');
+    background-image: url('../img/icon-plus-mobile.svg');
     background-repeat: no-repeat;
     background-position: center 24px;
     background-size: 30px;
@@ -117,7 +127,7 @@
     margin: 0 auto;
     text-align: center;
     display: block;
-    height: 30px;
+    height: 32px;
     background-color: @footer;
     font-family: 'Oswald', Arial, sans-serif;
     font-weight: normal;
@@ -125,4 +135,206 @@
     text-transform: uppercase;
     padding-top: 7px;
     margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+    .catalog {
+        padding-top: 55px;
+        border: none;
+    }
+    .catalog__item-image {
+        transform: none;
+    }
+    .catalog__item-image--tablet {
+        display: inline-block;
+        position: absolute;
+    }
+    .catalog__item-image--chicken-500 {
+        top: -205px;
+        left: -23px;
+    }
+    .catalog__item-image--chicken-1000 {
+        top: -233px;
+        left: -23px;
+    }
+    .catalog__item-image--fish-500 {
+        top: -208px;
+        left: -23px;
+    }
+    .catalog__item-image--fish-1000 {
+        top: -238px;
+        left: -23px;
+    }
+    .catalog__item-image--buckwheat-500 {
+        top: -205px;
+        left: -23px;
+    }
+    .catalog__item-image--buckwheat-1000 {
+        top: -236px;
+        left: -23px;
+    }
+    .catalog__item-image--rice-500 {
+        top: -207px;
+        left: -23px;
+    }
+    .catalog__item-image--mobile {
+        display: none;
+    }
+    .catalog__title {
+        font-family: 'Oswald', Arial, sans-serif;
+        font-weight: normal;
+        font-size: 60px;
+        line-height: 60px;
+        margin: 0;
+        margin-bottom: 164px;
+        width: auto;
+    }
+    .catalog__position {
+        border: none;
+        width: 708px;
+        margin: 0 auto;
+    }
+    .catalog__list {
+        display: flex;
+        width: 708px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    .catalog__item {
+        width: 324px;
+        background-color: @index-background;
+        border: none;
+        margin-bottom: 140px;
+        padding-top: 161px;
+        padding-bottom: 40px;
+    }
+    .catalog__item-parameters {
+        border-collapse: collapse;
+        font-size: 16px;
+        line-height: 16px;
+        width: 250px;
+        margin-left: 15px;
+        margin-top: 14px;
+    }
+    .catalog__item-caption, .catalog__item-value {
+        border-bottom: 2px solid @table;
+        padding-top: 7px;
+        padding-bottom: 9px;
+        height: 0px;
+    }
+    .catalog__item-name {
+        font-size: 20px;
+        line-height: 24px;
+        width: 154px;
+        margin: 0 auto;
+        text-align: center;
+        padding-left: 16px;
+    }
+    .catalog__item-order {
+        width: 248px;
+    }
+    .catalog__item-data {
+        margin-bottom: 29px;
+    }
+    .catalog__load {
+        background-image: url('../img/icon-plus.svg');
+        background-size: 60px;
+        background-position-x: center;
+        background-position-y: 52px;
+        width: 320px;
+        border: 2px solid @index-background;
+        height: 350px;
+    }
+    .catalog__view {
+        font-size: 20px;
+        line-height: 22px;
+        width: 134px;
+        margin-top: 84px;
+    }
+    .catalog__more {
+        font-size: 16px;
+        line-height: 18px;
+        width: 167px;
+        margin-top: 23px;
+        margin-bottom: 87px;
+    }
+    .catalog__view-more {
+        width: 249px;
+    }
+}
+@media (min-width: 1440px) {
+    .catalog {
+        padding-top: 69px;
+    }
+    .catalog__position {
+        width: 1220px;
+    }
+    .catalog__list {
+        width: 1220px;
+    }
+    .catalog__item {
+        width: 221px;
+        padding-left: 24px;
+        margin-bottom: 143px;
+    }
+    .catalog__load {
+        width: 241px;
+    }
+    .catalog__item-parameters {
+        width: 169px;
+    }
+    .catalog__item-data {
+        width: 169px;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .catalog__item-order {
+        width: 168px;
+        margin: 0;
+        margin-left: 15px;
+    }
+    .catalog__item-parameter {
+        line-height: 15px;
+    }
+    .catalog__view {
+        margin-top: 81px;
+    }
+    .catalog__view-more {
+        width: 169px;
+    }
+    .catalog__item-image--tablet {
+        display: none;
+    }
+    .catalog__item-image--desktop {
+        display: inline-block;
+        position: absolute;
+    }
+    .catalog__item-image--chicken-500 {
+        top: -212px;
+        left: -25px;
+    }
+    .catalog__item-image--chicken-1000 {
+        top: -240px;
+        left: -23px;
+    }
+    .catalog__item-image--fish-500 {
+        top: -214px;
+        left: -26px;
+    }
+    .catalog__item-image--fish-1000 {
+        top: -245px;
+        left: -25px;
+    }
+    .catalog__item-image--buckwheat-500 {
+        top: -213px;
+        left: -26px;
+    }
+    .catalog__item-image--buckwheat-1000 {
+        top: -246px;
+        left: -24px;
+    }
+    .catalog__item-image--rice-500 {
+        top: -215px;
+        left: -26px;
+    }
 }

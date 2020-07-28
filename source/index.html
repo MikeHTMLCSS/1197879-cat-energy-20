@@ -2,38 +2,52 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
       <div class="header__position">
-        <img class="header__logo" src="img/logo-mobile.svg" width="191" height="38" alt="логотип">
+        <img class="header__logo header__logo--mobile" src="img/logo-mobile.svg" width="191" height="38" alt="логотип">
+        <img class="header__logo header__logo--tablet" src="img/logo-desktop.svg" width="174" height="52" alt="логотип">
+        <img class="header__logo header__logo--desktop" src="img/logo-desktop.svg" width="202" height="59" alt="логотип">
         <button class="header__open">
           Открыть меню
         </button>
+        <div class="header__menu">
+          <a href="index.html" class="header__button header__button--opened">
+            Главная
+          </a>
+          <a href="catalog.html" class="header__button header__button--catalog">
+            Каталог продукции
+          </a>
+          <a href="form.html" class="header__button">
+            Подбор программы
+          </a>
+        </div>
       </div>
     </header>
     <main>
       <section class="cat-energy">
-        <div class="cat-energy__position">
+        <div class="cat-energy__head">
           <h1 class="cat-energy__title">
-            Функциональное питание для котов
+            Функциональное<br>питание для котов
           </h1>
           <p class="cat-energy__cat">
             Занялся собой? Займись котом!
           </p>
-          <a href="form.html" class="cat-energy__scheme">
-            Подобрать программу
-          </a>
         </div>
+        <a href="form.html" class="cat-energy__scheme">
+          Подобрать программу
+        </a>
       </section>
       <section class="plus">
         <div class="plus__item plus__item--slim">
           <h2 class="plus__title">
             Похудение
           </h2>
-          <p class="plus__information">
+          <p class="plus__information plus__information--slim">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
           <a href="" class="plus__catalog">
@@ -44,7 +58,7 @@
           <h2 class="plus__title">
             Набор массы
           </h2>
-          <p class="plus__information">
+          <p class="plus__information plus__information--pro">
             Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
           </p>
           <a href="" class="plus__catalog">
@@ -67,30 +81,34 @@
             Замените один-два приема обычной еды на наше функциональное питание.
           </li>
           <li class="explanation__tool explanation__tool--time">
-            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+            Уже через месяц наслаждайтесь изменениями к лучшему <br class="explanation__br-time">вашего питомца!
           </li>
         </ul>
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__social">
-        <a href="" class="footer__social-network footer__social-network--vk">
-          Вконтакте
-        </a>
-        <a href="" class="footer__social-network footer__social-network--in">
-          Инстаграм
-        </a>
-        <a href="" class="footer__social-network footer__social-network--fb">
-          Фейсбук
-        </a>
-      </div>
-      <div class="footer__academy">
-        <a href="" class="footer__academy-name">
-          HTML Academy
-        </a>
-        <a href="">
-          <img class="footer__academy-image" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
-        </a>
+      <div class="footer__position">
+        <div class="footer__social">
+          <a href="" class="footer__social-network footer__social-network--vk">
+            Вконтакте
+          </a>
+          <a href="" class="footer__social-network footer__social-network--in">
+            Инстаграм
+          </a>
+          <a href="" class="footer__social-network footer__social-network--fb">
+            Фейсбук
+          </a>
+        </div>
+        <div class="footer__academy">
+          <a href="" class="footer__academy-name">
+            HTML Academy
+          </a>
+          <a href="">
+            <svg viewBox="0 0 60 60" class="footer__academy-image">
+              <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+            </svg>
+          </a>
+        </div>
       </div>
     </footer>
   </body>

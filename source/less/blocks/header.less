@@ -8,6 +8,9 @@
 .header__logo {
     margin-right: 65px;
 }
+.header__logo--tablet, .header__logo--desktop, .header__menu {
+    display: none;
+}
 .header__open {
     background-color: transparent;
     background-image: url('../img/icon-mobile-menu.svg');
@@ -15,4 +18,100 @@
     width: 24px;
     height: 16px;
     font-size: 0;
+}
+@media (min-width: 768px) {
+    .header__logo--tablet {
+        display: inline-block;
+    }
+    .header__logo--mobile, .header__open {
+        display: none;
+    }
+    .header__logo {
+        margin-right: 95px;
+    }
+    .header__menu {
+        display: flex;
+    }
+    .header__position {
+        width: 708px;
+        padding-top: 14px;
+    }
+    .header__button {
+        font-family: 'Oswald', Arial, sans-serif;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: uppercase;
+        margin-top: 6px;
+        position: relative;
+    }
+    .header__button:not(:last-child) {
+        margin-right: 35px;
+    }
+    .header__button--opened::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: @button;
+        top: 33px;
+    }
+}
+@media (min-width: 1440px) {
+    .header__position {
+        width: 1220px;
+        padding-top: 47px;
+    }
+    .header__logo--tablet {
+        display: none;
+    }
+    .header__logo--desktop {
+        display: inline-block;
+    }
+    .header__logo--desktop {
+        margin-right: 409px;
+    }
+    .header__menu {
+        padding-left: 131px;
+        position: relative;
+    }
+    .header__menu::before {
+        content: "";
+        display: block;
+        width: 720px;
+        height: 696px;
+        background-image: url('../img/index-background-desktop@1x.jpg');
+        background-color: @index-cat-energy;
+        position: absolute;
+        left: -1px;
+        top: -69px;
+    }
+    .header__menu--catalog::before {
+        display: none;
+    }
+    .header__button {
+        font-size: 19px;
+        line-height: 30px;
+        color: @light;
+        margin-top: 3px;
+    }
+    .header__button--in-catalog {
+        color: @dark;
+    }
+    .header__button:not(:last-child) {
+        margin-right: 38px;
+    }
+    .header__button--catalog:not(:last-child) {
+        margin-right: 42px;
+    }
+    .header__button--opened::after {
+        height: 2px;
+        width: 100%;
+        background-color: @light;
+        top: 35px;
+    }
+    .header__button--catalog::after {
+        background-color: @button;
+    }
 }
