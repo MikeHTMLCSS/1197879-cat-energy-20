@@ -82,15 +82,22 @@
         width: 720px;
         height: 696px;
         background-image: url('../img/index-background-desktop@1x.jpg');
+        background-color: @index-cat-energy;
         position: absolute;
         left: -1px;
         top: -69px;
+    }
+    .header__menu--catalog::before {
+        display: none;
     }
     .header__button {
         font-size: 19px;
         line-height: 30px;
         color: @light;
         margin-top: 3px;
+    }
+    .header__button--in-catalog {
+        color: @dark;
     }
     .header__button:not(:last-child) {
         margin-right: 38px;
@@ -103,5 +110,8 @@
         width: 100%;
         background-color: @light;
         top: 35px;
+    }
+    .header__button--catalog::after {
+        background-color: @button;
     }
 }
