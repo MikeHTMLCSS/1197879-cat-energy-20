@@ -1,0 +1,26 @@
+.mobile-menu {
+    border-top: 2px solid @mobile-menu;
+    z-index: 2;
+    background-color: @light;
+    width: 100%;
+}
+.mobile-menu__button {
+    border-bottom: 2px solid @mobile-menu;
+    font-family: 'Oswald', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 22px;
+    height: 42px;
+    display: block;
+}
+.mobile-menu--hide {
+    display: none;
+}
+@media (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
