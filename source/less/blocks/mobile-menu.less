@@ -1,5 +1,8 @@
 .mobile-menu {
     border-top: 2px solid @mobile-menu;
+    z-index: 2;
+    background-color: @light;
+    width: 100%;
 }
 .mobile-menu__button {
     border-bottom: 2px solid @mobile-menu;
@@ -12,6 +15,9 @@
     padding-top: 22px;
     height: 42px;
     display: block;
+}
+.mobile-menu--hide {
+    display: none;
 }
 @media (min-width: 768px) {
     .mobile-menu {
