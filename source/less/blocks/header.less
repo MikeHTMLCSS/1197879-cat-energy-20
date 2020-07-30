@@ -63,6 +63,9 @@
     }
 }
 @media (min-width: 1440px) {
+    .header {
+        position: relative;
+    }
     .header__position {
         width: 1220px;
         padding-top: 47px;
@@ -78,18 +81,18 @@
     }
     .header__menu {
         padding-left: 131px;
-        position: relative;
     }
     .header__menu::before {
         content: "";
         display: block;
-        width: 720px;
+        width: calc(100% - 760px);
         height: 696px;
         background-image: url('../img/index-background-desktop@1x.jpg');
+        background-repeat: no-repeat;
         background-color: @index-cat-energy;
         position: absolute;
-        left: -1px;
-        top: -69px;
+        left: 50%;
+        top: -2px;
     }
     .header__menu--catalog::before {
         display: none;
