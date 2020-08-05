@@ -94,7 +94,7 @@
         left: 50%;
         top: -2px;
     }
-    .header__menu--catalog::before {
+    .header__menu--catalog::before, .header__menu--form::before {
         display: none;
     }
     .header__button {
@@ -103,7 +103,7 @@
         color: @light;
         margin-top: 3px;
     }
-    .header__button--in-catalog {
+    .header__button--in-catalog, .header__button--in-form {
         color: @dark;
     }
     .header__button:not(:last-child) {
@@ -118,7 +118,7 @@
         background-color: @light;
         top: 35px;
     }
-    .header__button--catalog::after {
+    .header__button--catalog::after, .header__button--form::after {
         background-color: @button;
     }
 }
