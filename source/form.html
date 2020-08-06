@@ -9,13 +9,14 @@
   <body>
     <header class="header">
       <div class="header__position">
-        <img class="header__logo header__logo--mobile" src="img/logo-mobile.svg" width="191" height="38" alt="логотип">
-        <img class="header__logo header__logo--tablet" src="img/logo-desktop.svg" width="174" height="52" alt="логотип">
-        <img class="header__logo header__logo--desktop" src="img/logo-desktop.svg" width="202" height="59" alt="логотип">
+        <picture>
+          <source srcset="img/logo-desktop.svg" media="(min-width: 768px)">
+          <img class="header__logo" src="img/logo-mobile.svg" alt="логотип">
+        </picture>
         <button class="header__open">
           Открыть меню
         </button>
-        <div class="header__menu header__menu--form">
+        <div class="header__menu">
           <a href="index.html" class="header__button header__button--in-form">
             Главная
           </a>
