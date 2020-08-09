@@ -13,6 +13,12 @@
     width: 191px;
     height: 38px;
 }
+.header__logo:hover {
+    opacity: 0.8;
+}
+.header__logo:active {
+    opacity: 0.6;
+}
 .header__open {
     background-color: transparent;
     background-image: url('../img/icon-mobile-menu.svg');
@@ -53,6 +59,12 @@
         margin-top: 6px;
         position: relative;
     }
+    .header__button:hover {
+        opacity: 0.6;
+    }
+    .header__button:active {
+        opacity: 0.3;
+    }
     .header__button:not(:last-child) {
         margin-right: 35px;
     }
@@ -64,6 +76,9 @@
         height: 2px;
         background-color: @button;
         top: 33px;
+    }
+    .header__button--opened:not(.header__button--in-catalog):not(.header__button--in-form) {
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 }
 @media (min-width: 1440px) {
@@ -120,5 +135,10 @@
     }
     .header__button--catalog::after, .header__button--form::after {
         background-color: @button;
+    }
+    @media (min-resolution: 192dpi) {
+        .header--index::before {
+            background-image: url('../img/index-background-desktop@2x.jpg');
+        }
     }
 }

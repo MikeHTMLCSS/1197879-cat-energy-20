@@ -41,6 +41,12 @@
     font-size: 16px;
     line-height: 0px;
 }
+.catalog__item-order:hover {
+    background-color: @button-hover;
+}
+.catalog__item-order:active .catalog__item-order-text {
+    opacity: 0.3;
+}
 .catalog__item-name {
     font-family: 'Oswald', Arial, sans-serif;
     font-weight: normal;
@@ -123,6 +129,7 @@
     font-family: Arial, sans-serif;
 }
 .catalog__view-more {
+    color: @button-text;
     width: 280px;
     margin: 0 auto;
     text-align: center;
@@ -135,6 +142,12 @@
     text-transform: uppercase;
     padding-top: 7px;
     margin-bottom: 25px;
+}
+.catalog__view-more:hover {
+    background-color: @catalog-border;
+}
+.catalog__view-more:active .catalog__view-more-text {
+    opacity: 0.3;
 }
 @media (min-width: 768px) {
     .catalog {

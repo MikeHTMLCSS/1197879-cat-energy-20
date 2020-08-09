@@ -9,10 +9,12 @@
   <body>
     <header class="header">
       <div class="header__position">
-        <picture>
-          <source srcset="img/logo-desktop.svg" media="(min-width: 768px)">
-          <img class="header__logo" src="img/logo-mobile.svg" alt="логотип">
-        </picture>
+        <a href="">
+          <picture>
+            <source srcset="img/logo-desktop.svg" media="(min-width: 768px)">
+            <img class="header__logo" src="img/logo-mobile.svg" alt="логотип">
+          </picture>
+        </a>
         <button class="header__open">
           Открыть меню
         </button>
@@ -55,11 +57,11 @@
           </label>
           <label class="form__cat-label" for="weight">
             Вес (кг):*
-            <input class="form__cat-input" type="text" id="weight" name="name"><br>
+            <input class="form__cat-input" type="text" id="weight" name="weight"><br>
           </label>
           <label class="form__cat-label" for="age">
             Возраст (лет):
-            <input class="form__cat-input" type="text" id="age" name="name"><br>
+            <input class="form__cat-input" type="text" id="age" name="age"><br>
           </label>
         </fieldset>
         <fieldset class="form__programm-type">
@@ -82,11 +84,11 @@
           </legend>
           <label class="form__contact-details-label" for="email">
             E-mail:*
-            <input class="form__contact-details-input" type="email" id="email" placeholder="KUKLACHEV@GMAIL.COM"><br>
+            <input class="form__contact-details-input" type="email" id="email" name="email" placeholder="KUKLACHEV@GMAIL.COM"><br>
           </label>
           <label class="form__contact-details-label" for="tel">
             Телефон:*
-            <input class="form__contact-details-input" type="tel" id="tel" placeholder="8 (960) 900-60-90"><br>
+            <input class="form__contact-details-input" type="tel" id="tel" name="phone" placeholder="8 (960) 900-60-90"><br>
           </label>
         </fieldset>
         <fieldset class="form__comment">
@@ -133,7 +135,7 @@
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </p>
       </div>
-      <div class="mapouter"><div class="gmap_canvas"><iframe width="320" height="362" id="gmap_canvas" src="https://maps.google.com/maps?q=%D1%83%D0%BB.%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%2C%20%D0%B4.%2019%2F8%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.net">123movies. net</a></div><style>.mapouter{position:relative;text-align:right;height:362px;width:320px;}.gmap_canvas {overflow:hidden;background:none!important;height:362px;width:320px;}</style></div>
+      <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="362" id="gmap_canvas" src="https://maps.google.com/maps?q=%D1%83%D0%BB.%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%2C%20%D0%B4.%2019%2F8%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.net">123movies. net</a></div><style>.mapouter{position:relative;text-align:right;height:362px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:362px;width:100%;}</style></div>
       <div class="footer__position">
         <div class="footer__social">
           <a href="" class="footer__social-network footer__social-network--vk">
