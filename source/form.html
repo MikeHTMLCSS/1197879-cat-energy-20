@@ -9,20 +9,23 @@
   <body>
     <header class="header">
       <div class="header__position">
-        <img class="header__logo header__logo--mobile" src="img/logo-mobile.svg" width="191" height="38" alt="логотип">
-        <img class="header__logo header__logo--tablet" src="img/logo-desktop.svg" width="174" height="52" alt="логотип">
-        <img class="header__logo header__logo--desktop" src="img/logo-desktop.svg" width="202" height="59" alt="логотип">
+        <a href="">
+          <picture>
+            <source srcset="img/logo-desktop.svg" media="(min-width: 768px)">
+            <img class="header__logo" src="img/logo-mobile.svg" alt="логотип">
+          </picture>
+        </a>
         <button class="header__open">
           Открыть меню
         </button>
         <div class="header__menu">
-          <a href="index.html" class="header__button">
+          <a href="index.html" class="header__button header__button--in-form">
             Главная
           </a>
-          <a href="catalog.html" class="header__button header__button--catalog">
+          <a href="catalog.html" class="header__button header__button--catalog header__button--in-form">
             Каталог продукции
           </a>
-          <a href="form.html" class="header__button header__button--opened">
+          <a href="form.html" class="header__button header__button--form header__button--opened header__button--in-form">
             Подбор программы
           </a>
         </div>
@@ -39,8 +42,100 @@
         Подбор программы
       </a>
     </div>
-    <menu></menu>
+    <main class="form">
+      <h1 class="form__title">
+        Подбор программы
+      </h1>
+      <p class="form_programm">
+        Заполните анкету, и мы подберем<br>программу питания для вашего кота
+      </p>
+      <form class="form__data" action="https://echo.htmlacademy.ru" method="POST">
+        <fieldset class="form__cat">
+          <label class="form__cat-label" for="name">
+            Имя:*
+            <input class="form__cat-input" type="text" id="name" name="name"><br>
+          </label>
+          <label class="form__cat-label" for="weight">
+            Вес (кг):*
+            <input class="form__cat-input" type="text" id="weight" name="weight"><br>
+          </label>
+          <label class="form__cat-label" for="age">
+            Возраст (лет):
+            <input class="form__cat-input" type="text" id="age" name="age"><br>
+          </label>
+        </fieldset>
+        <fieldset class="form__programm-type">
+          <label class="form__programm-type-label" for="slim">
+            <input class="form__programm-type-input" type="radio" id="slim" name="programm" value="slim">
+            Похудение<br>
+          </label>
+          <label class="form__programm-type-label" for="pro">
+            <input class="form__programm-type-input" type="radio" id="pro" name="programm" value="pro">
+            Набор массы<br>
+          </label>
+          <label class="form__programm-type-label" for="none">
+            <input class="form__programm-type-input" type="radio" id="none" name="programm" value="none">
+            Не знаю (Нужен ваш совет)<br>
+          </label>
+        </fieldset>
+        <fieldset class="form__contact-details">
+          <legend class="form__contact-details-title">
+            Контактные данные (владельца кота)
+          </legend>
+          <label class="form__contact-details-label" for="email">
+            E-mail:*
+            <input class="form__contact-details-input" type="email" id="email" name="email" placeholder="KUKLACHEV@GMAIL.COM"><br>
+          </label>
+          <label class="form__contact-details-label" for="tel">
+            Телефон:*
+            <input class="form__contact-details-input" type="tel" id="tel" name="phone" placeholder="8 (960) 900-60-90"><br>
+          </label>
+        </fieldset>
+        <fieldset class="form__comment">
+          <legend class="form__comment-title">
+            Комментарий
+          </legend>
+          <textarea class="form__comment-input">Расскажите обо всех повадках кота</textarea>
+        </fieldset>
+        <fieldset class="form__additionally">
+          <legend class="form__additionally-title">
+            Дополнительно
+          </legend>
+          <label class="form__additionally-label" for="sweetener">
+            <input class="form__additionally-input" type="checkbox" id="sweetener" name="sweetener">
+            Сахарозаменитель<br>
+          </label>
+          <label class="form__additionally-label" for="water">
+            <input class="form__additionally-input" type="checkbox" id="water" name="water">
+            Питьевая вода<br>
+          </label>
+          <label class="form__additionally-label" for="milk">
+            <input class="form__additionally-input" type="checkbox" id="milk" name="milk">
+            Молоко<br>
+          </label>
+          <label class="form__additionally-label" for="vitamins">
+            <input class="form__additionally-input" type="checkbox" id="vitamins" name="vitamins">
+            Витамины<br>
+          </label>
+        </fieldset>
+        <div>
+          <input class="form__submit" type="submit" value="Отправить заявку">
+          <p class="form__mandatory">
+            * — Обязательные поля
+          </p>
+        </div>
+      </form>
+    </main>
     <footer class="footer">
+      <div class="footer__contacts">
+        <p class="footer__invite">
+          Приглашаем к сотрудничеству дилеров!
+        </p>
+        <p class="footer__address">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </p>
+      </div>
+      <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="362" id="gmap_canvas" src="https://maps.google.com/maps?q=%D1%83%D0%BB.%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%2C%20%D0%B4.%2019%2F8%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.net">123movies. net</a></div><style>.mapouter{position:relative;text-align:right;height:362px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:362px;width:100%;}</style></div>
       <div class="footer__position">
         <div class="footer__social">
           <a href="" class="footer__social-network footer__social-network--vk">

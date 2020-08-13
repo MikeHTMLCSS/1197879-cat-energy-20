@@ -5,11 +5,19 @@
     margin: 0 auto;
     width: 280px;
 }
+.header__menu {
+    display: none;
+}
 .header__logo {
     margin-right: 65px;
+    width: 191px;
+    height: 38px;
 }
-.header__logo--tablet, .header__logo--desktop, .header__menu {
-    display: none;
+.header__logo:hover {
+    opacity: 0.8;
+}
+.header__logo:active {
+    opacity: 0.6;
 }
 .header__open {
     background-color: transparent;
@@ -32,6 +40,8 @@
     }
     .header__logo {
         margin-right: 95px;
+        width: 174px;
+        height: 52px;
     }
     .header__menu {
         display: flex;
@@ -49,6 +59,12 @@
         margin-top: 6px;
         position: relative;
     }
+    .header__button:hover {
+        opacity: 0.6;
+    }
+    .header__button:active {
+        opacity: 0.3;
+    }
     .header__button:not(:last-child) {
         margin-right: 35px;
     }
@@ -61,37 +77,39 @@
         background-color: @button;
         top: 33px;
     }
+    .header__button--opened:not(.header__button--in-catalog):not(.header__button--in-form) {
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
 }
 @media (min-width: 1440px) {
+    .header {
+        position: relative;
+    }
+    .header--index::before {
+        content: "";
+        display: block;
+        width: calc(50%);
+        height: 696px;
+        background-image: url('../img/index-background-desktop@1x.jpg');
+        background-repeat: no-repeat;
+        background-color: @index-cat-energy;
+        position: absolute;
+        left: 50%;
+        top: -2px;
+    }
     .header__position {
         width: 1220px;
         padding-top: 47px;
     }
-    .header__logo--tablet {
-        display: none;
-    }
-    .header__logo--desktop {
-        display: inline-block;
-    }
-    .header__logo--desktop {
+    .header__logo {
         margin-right: 409px;
+        width: 202px;
+        height: 59px;
     }
     .header__menu {
         padding-left: 131px;
-        position: relative;
     }
-    .header__menu::before {
-        content: "";
-        display: block;
-        width: 720px;
-        height: 696px;
-        background-image: url('../img/index-background-desktop@1x.jpg');
-        background-color: @index-cat-energy;
-        position: absolute;
-        left: -1px;
-        top: -69px;
-    }
-    .header__menu--catalog::before {
+    .header__menu--catalog::before, .header__menu--form::before {
         display: none;
     }
     .header__button {
@@ -100,7 +118,7 @@
         color: @light;
         margin-top: 3px;
     }
-    .header__button--in-catalog {
+    .header__button--in-catalog, .header__button--in-form {
         color: @dark;
     }
     .header__button:not(:last-child) {
@@ -115,7 +133,13 @@
         background-color: @light;
         top: 35px;
     }
-    .header__button--catalog::after {
+    .header__button--catalog::after, .header__button--form::after {
         background-color: @button;
+    }
+    @media (min-resolution: 192dpi) {
+        .header--index::before {
+            background-image: url('../img/index-background-desktop@2x.jpg');
+            background-size: 720px 696px;
+        }
     }
 }

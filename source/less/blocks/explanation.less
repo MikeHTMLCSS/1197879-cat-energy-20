@@ -51,6 +51,27 @@
 .explanation__br-time {
     display: none;
 }
+.explanation-br-tablet {
+    display: none;
+}
+@media (min-resolution: 192dpi) {
+    .explanation__tool--substances::before {
+        background-image: url('../img/advantage-leaf@2x.png');
+        background-size: 44px 46px;
+    }
+    .explanation__tool--cooking::before {
+        background-image: url('../img/advantage-powder@2x.png');
+        background-size: 50px 46px;
+    }
+    .explanation__tool--eating::before {
+        background-image: url('../img/advantage-dining@2x.png');
+        background-size: 46px 46px;
+    }
+    .explanation__tool--time::before {
+        background-image: url('../img/advantage-clock@2x.png');
+        background-size: 44px 46px;
+    }
+}
 @media (min-width: 768px) {
     .explanation__br-time {
         display: inline;
@@ -115,6 +136,9 @@
     .explanation__tool--time::after {
         content: "4";
         left: 113px;
+    }
+    .explanation-br-tablet {
+        display: inline;
     }
 }
 @media (min-width: 1440px) {
