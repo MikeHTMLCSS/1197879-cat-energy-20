@@ -1,6 +1,8 @@
 const gulp = require("gulp");
 const del = require("del");
 
+const { src } = require("gulp");
+
 const copy = () => {
   return gulp.src(["source/fonts/**/*.{woff,woff2}", "source/img/**", "source/js/**", "source/*.ico"], {base: "source"}).pipe(gulp.dest("build"));
 };
@@ -18,7 +20,6 @@ const sourcemap = require("gulp-sourcemaps");
 const less = require("gulp-less");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
-const { src } = require("gulp");
 const sync = require("browser-sync").create();
 
 // Styles
