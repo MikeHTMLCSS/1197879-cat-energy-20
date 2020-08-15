@@ -1,17 +1,10 @@
 const gulp = require("gulp");
-const del = require("del");
 
 const copy = () => {
   return gulp.src(["source/fonts/**/*.{woff,woff2}", "source/img/**", "source/js/**", "source/*.ico"], {base: "source"}).pipe(gulp.dest("build"));
 };
 
 exports.copy = copy;
-
-const clean = () => {
-  return del("build");
-};
-
-exports.clean = clean;
 
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
