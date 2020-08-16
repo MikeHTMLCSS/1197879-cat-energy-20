@@ -1,6 +1,109 @@
 .example {
-    width: 280px;
+    background-color: @example;
+    padding-top: 28px;
+    padding-bottom: 36px;
 }
-.example__cats-tablet, .example__cats-desktop {
+.example__story {
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 34px;
+}
+.example__title {
+    font-family: 'Oswald', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 33px;
+}
+.example__tale {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 25px;
+}
+.example__data {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    margin-bottom: 20px;
+}
+.example__datum {
+    width: 124px;
+    text-align: center;
+    padding-top: 17px;
+}
+.example__value {
+    font-family: 'Oswald', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+.example__result {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+}
+.example__cost {
+    font-family: 'Oswald', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.example__cats {
+    margin-bottom: 32px;
+}
+.example-cat--before {
+    width: 320px;
+    margin: 0 auto;
+    display: block;
+}
+.example-cat--after {
+    width: 320px;
+    margin: 0 auto;
     display: none;
+}
+.example__form {
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.example__time {
+    font-family: 'Oswald', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.example__time--before {
+    position: relative;
+    left: -16px;
+}
+.example__time--after {
+    position: relative;
+    left: 19px;
+}
+.example__inputs {
+    width: 82px;
+    height: 12px;
+    background-color: @light;
+    border: 1px solid @table;
+    border-radius: 6px;
+    position: relative;
+    left: 3px;
+}
+.example__input-mobile {
+    width: 35px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: @button;
+    margin-left: 4px;
+    margin-top: 3px;
 }

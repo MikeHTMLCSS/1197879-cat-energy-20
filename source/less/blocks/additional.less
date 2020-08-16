@@ -1,0 +1,104 @@
+.additional {
+    padding-top: 28px;
+    padding-bottom: 35px;
+    position: relative;
+}
+.additional::after {
+    content: "";
+    display: block;
+    height: 2.5px;
+    position: absolute;
+    left: calc(50% + 140px);
+    top: 42px;
+    width: calc(50% - 140px);
+    background-color: @button;
+}
+.additional__title {
+    font-family: 'Oswald', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    width: 280px;
+    margin: 0 auto;
+    border-bottom: 2px solid @table;
+    padding-bottom: 35px;
+    display: flex;
+    align-items: center;
+}
+.additional__title-text {
+    margin-right: 22px;
+}
+.additional__title::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: @button;
+    flex-basis: 0;
+    flex-grow: 1;
+    position: relative;
+    top: 3px;
+}
+.additional__list {
+    margin-bottom: 39px;
+}
+.additional__item {
+    width: 280px;
+    margin: 0 auto;
+    border-bottom: 2px solid @table;
+    padding-top: 10px;
+    padding-bottom: 19px;
+}
+.additional__name {
+    font-family: 'Oswald', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+.additional__data {
+    display: flex;
+    width: 280px;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: @button-text;
+    margin-bottom: 14px;
+}
+.additional__order {
+    width: 280px;
+    height: 40px;
+    border: none;
+    background-color: @button;
+    font-family: 'Oswald', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: @light;
+    text-transform: uppercase;
+}
+.additional__gift {
+    width: 280px;
+    padding-top: 186px;
+    height: 103px;
+    margin: 0 auto;
+    background-image: url('../img/gift-photo-mobile@1x.jpg'); 
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: @light;
+    position: relative;
+}
+.additional__gift::before {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 59px;
+    background-image: url('../img/icon-gift.svg');
+    position: absolute;
+    top: 65px;
+    left: 112px;
+}
