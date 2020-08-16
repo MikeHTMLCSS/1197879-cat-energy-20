@@ -46,7 +46,7 @@
       <h1 class="form__title">
         Подбор программы
       </h1>
-      <p class="form_programm">
+      <p class="form__programm">
         Заполните анкету, и мы подберем<br>программу питания для вашего кота
       </p>
       <form class="form__data" action="https://echo.htmlacademy.ru" method="POST">
@@ -68,20 +68,23 @@
           <label class="form__programm-type-label" for="slim">
             <input class="form__programm-type-input" type="radio" id="slim" name="programm" value="slim">
             Похудение<br>
+            <div class="form__programm-type-view"></div>
           </label>
           <label class="form__programm-type-label" for="pro">
             <input class="form__programm-type-input" type="radio" id="pro" name="programm" value="pro">
             Набор массы<br>
+            <div class="form__programm-type-view"></div>
           </label>
           <label class="form__programm-type-label" for="none">
             <input class="form__programm-type-input" type="radio" id="none" name="programm" value="none">
             Не знаю (Нужен ваш совет)<br>
+            <div class="form__programm-type-view"></div>
           </label>
         </fieldset>
         <fieldset class="form__contact-details">
-          <legend class="form__contact-details-title">
+          <h3 class="form__contact-details-title">
             Контактные данные (владельца кота)
-          </legend>
+          </h3>
           <label class="form__contact-details-label" for="email">
             E-mail:*
             <input class="form__contact-details-input" type="email" id="email" name="email" placeholder="KUKLACHEV@GMAIL.COM"><br>
@@ -92,15 +95,15 @@
           </label>
         </fieldset>
         <fieldset class="form__comment">
-          <legend class="form__comment-title">
+          <h3 class="form__comment-title">
             Комментарий
-          </legend>
+          </h3>
           <textarea class="form__comment-input">Расскажите обо всех повадках кота</textarea>
         </fieldset>
         <fieldset class="form__additionally">
-          <legend class="form__additionally-title">
+          <h3 class="form__additionally-title">
             Дополнительно
-          </legend>
+          </h3>
           <label class="form__additionally-label" for="sweetener">
             <input class="form__additionally-input" type="checkbox" id="sweetener" name="sweetener">
             Сахарозаменитель<br>
