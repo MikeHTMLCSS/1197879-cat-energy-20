@@ -1527,17 +1527,18 @@ fieldset {
   align-items: center;
 }
 .form__contact-details-title-text {
-  margin-right: 22px;
+  margin-right: 14px;
+  width: 187px;
 }
 .form__contact-details-title::after {
   content: "";
   display: block;
-  height: 3px;
+  height: 3.2px;
   background-color: #68b738;
   flex-basis: 0;
   flex-grow: 1;
   position: relative;
-  top: 3px;
+  top: -9px;
 }
 .form__contact-details-label {
   width: 280px;
