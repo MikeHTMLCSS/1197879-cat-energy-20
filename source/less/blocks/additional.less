@@ -108,3 +108,105 @@
     top: 65px;
     left: 112px;
 }
+@media (min-width: 768px) {
+    .additional {
+        padding-top: 68px;
+        padding-bottom: 76px;
+    }
+    .additional::after {
+        top: 87.5px;
+    }
+    .additional__title {
+        width: 671px;
+        font-size: 36px;
+        line-height: 36px;
+        padding-left: 37px;
+        border: none;
+        margin-bottom: 78px;
+        padding-bottom: 0;
+    }
+    .additional__title-text {
+        margin-right: 36px;
+    }
+    .additional__title::after {
+        height: 3px;
+    }
+    .additional__information {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .additional__list {
+        margin-bottom: 69px;
+    }
+    .additional__item:last-child {
+        border-bottom: 1px solid @table;
+    }
+    .additional__item {
+        box-sizing: border-box;
+        width: 708px;
+        padding-top: 26px;
+        padding-bottom: 26px;
+        padding-right: 37px;
+        padding-left: 38px;
+        border: none;
+        border-top: 1px solid @table;
+        border-right: 1px solid @table;
+        border-left: 1px solid @table;
+    }
+    .additional__name {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .additional__data {
+        width: auto;
+    }
+    .additional__quantity {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 2px;
+    }
+    .additional__quantity--sugar {
+        margin-right: 51px;
+    }
+    .additional__quantity--water {
+        margin-right: 57px;
+    }
+    .additional__quantity--milk {
+        margin-right: 50px;
+    }
+    .additional__quantity--vitamins {
+        margin-right: 51px;
+    }
+    .additional__cost {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 2px;
+    }
+    .additional__order {
+        width: 632px;
+    }
+    .additional__gift {
+        height: 60px;
+        padding-top: 71px;
+        padding-bottom: 69px;
+        width: 285px;
+        text-align: left;
+        padding-left: 423px;
+        background-image: url('../img/gift-photo-tablet@1x.jpg');
+    }
+    .additional__gift::before {
+        left: 89px;
+        top: 63px;
+        width: 58px;
+        height: 63px;
+    }
+    @media (min-resolution: 192dpi) {
+        .additional__gift {
+            background-image: url('../img/gift-photo-tablet@2x.jpg');
+            background-size: 100%;
+        }
+    }
+}
