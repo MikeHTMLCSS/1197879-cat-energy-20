@@ -113,8 +113,19 @@
         padding-top: 68px;
         padding-bottom: 76px;
     }
+    .additional::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 3px;
+        top: 89px;
+        width: calc(50% - 354px);
+        background-color: @button;
+        left: 0;
+    }
     .additional::after {
         top: 87.5px;
+        left: calc(50% + 354px);
     }
     .additional__title {
         width: 671px;

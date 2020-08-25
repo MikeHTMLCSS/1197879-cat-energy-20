@@ -1608,8 +1608,19 @@ iframe,
     padding-top: 68px;
     padding-bottom: 76px;
   }
+  .additional::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 3px;
+    top: 89px;
+    width: calc(50% - 354px);
+    background-color: #68b738;
+    left: 0;
+  }
   .additional::after {
     top: 87.5px;
+    left: calc(50% + 354px);
   }
   .additional__title {
     width: 671px;
@@ -2096,6 +2107,21 @@ iframe,
   .form__contact-details {
     margin-bottom: 31px;
   }
+  .form__contact-details::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 3px;
+    top: 48px;
+    width: calc(50% - 354px);
+    background-color: #68b738;
+    left: 0;
+  }
+  .form__contact-details::after {
+    left: calc(50% + 354px);
+    top: 48px;
+    width: calc(50% - 354px);
+  }
   .form__contact-details-title {
     font-size: 36px;
     line-height: 36px;
@@ -2105,6 +2131,11 @@ iframe,
   }
   .form__contact-details-title-text {
     width: auto;
+    margin-right: 43px;
+  }
+  .form__contact-details-title::after {
+    height: 3px;
+    top: 4.5px;
   }
   .form__contact-details-label {
     width: 632px;
@@ -2127,12 +2158,34 @@ iframe,
   .form__comment {
     margin-bottom: 37px;
   }
+  .form__comment::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 3px;
+    top: 35px;
+    width: calc(50% - 354px);
+    background-color: #68b738;
+    left: 0;
+  }
+  .form__comment::after {
+    left: calc(50% + 354px);
+    top: 35px;
+    width: calc(50% - 354px);
+  }
   .form__comment-title {
     font-size: 36px;
     line-height: 36px;
     width: 669px;
     padding-left: 39px;
     margin-bottom: 77px;
+  }
+  .form__comment-title-text {
+    margin-right: 40px;
+  }
+  .form__comment-title::after {
+    height: 3px;
+    top: 5px;
   }
   .form__comment-input {
     font-size: 20px;
@@ -2142,12 +2195,34 @@ iframe,
     padding-top: 8px;
     padding-left: 20px;
   }
+  .form__additionally::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 3px;
+    top: 48px;
+    width: calc(50% - 354px);
+    background-color: #68b738;
+    left: 0;
+  }
+  .form__additionally::after {
+    left: calc(50% + 354px);
+    top: 48px;
+    width: calc(50% - 354px);
+  }
   .form__additionally-title {
     font-size: 36px;
     line-height: 36px;
     width: 668px;
     padding-left: 40px;
     margin-bottom: 57px;
+  }
+  .form__additionally-title-text {
+    margin-right: 41px;
+  }
+  .form__additionally-title::after {
+    top: 4.5px;
+    height: 3px;
   }
   .form__additonally-labels {
     display: flex;
