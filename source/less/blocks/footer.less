@@ -171,6 +171,28 @@ iframe, .mapouter, .gmap_canvas {
     }
 }
 @media (min-width: 1440px) {
+    .footer {
+        position: relative;
+    }
+    .footer__contacts {
+        position: absolute;
+        z-index: 1;
+        background-color: @light;
+        top: 95px;
+        left: calc(50% - 610px);
+        padding-left: 35px;
+        width: auto;
+        padding-right: 42px;
+    }
+    .footer__contacts-position {
+        width: auto;
+    }
+    .footer__invite {
+        margin-right: 80px;
+    }
+    .footer__address {
+        text-align: left;
+    }
     .footer__position {
         width: 1220px;
         background-position-y: 62px;

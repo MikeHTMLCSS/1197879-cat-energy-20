@@ -106,6 +106,7 @@ fieldset {
 @media (min-width: 1440px) {
   .header {
     position: relative;
+    margin-bottom: 7px;
   }
   .header--index::before {
     content: "";
@@ -121,7 +122,7 @@ fieldset {
   }
   .header__position {
     width: 1220px;
-    padding-top: 47px;
+    padding-top: 40px;
   }
   .header__logo {
     margin-right: 409px;
@@ -668,6 +669,9 @@ fieldset {
   .explanation__tool {
     margin: 0;
   }
+  .explanation__tool:not(:nth-child(3)):not(:nth-child(4)) {
+    margin-bottom: 0;
+  }
 }
 .footer {
   background-color: #f2f2f2;
@@ -846,6 +850,28 @@ iframe,
   }
 }
 @media (min-width: 1440px) {
+  .footer {
+    position: relative;
+  }
+  .footer__contacts {
+    position: absolute;
+    z-index: 1;
+    background-color: #ffffff;
+    top: 95px;
+    left: calc(50% - 610px);
+    padding-left: 35px;
+    width: auto;
+    padding-right: 42px;
+  }
+  .footer__contacts-position {
+    width: auto;
+  }
+  .footer__invite {
+    margin-right: 80px;
+  }
+  .footer__address {
+    text-align: left;
+  }
   .footer__position {
     width: 1220px;
     background-position-y: 62px;
@@ -1491,6 +1517,73 @@ iframe,
   }
   .example__time--after {
     left: 23px;
+  }
+}
+@media (min-width: 1440px) {
+  .example {
+    border: none;
+    padding-top: 29px;
+    background-image: linear-gradient(#ffffff 165px, #f2f2f2 165px);
+  }
+  .example__position {
+    display: flex;
+    width: 1220px;
+    margin: 0 auto;
+  }
+  .example__story {
+    width: 436px;
+    margin-bottom: 72px;
+  }
+  .example__title {
+    margin-bottom: 146px;
+  }
+  .example__tale {
+    width: 100%;
+    margin-bottom: 69px;
+  }
+  .example__br-tablet {
+    display: none;
+  }
+  .example__information {
+    display: block;
+    width: auto;
+  }
+  .example__data {
+    margin-bottom: 45px;
+  }
+  .example__value {
+    margin-bottom: 14px;
+  }
+  .example__cost {
+    width: auto;
+    text-align: left;
+  }
+  .example__tab-desktop {
+    padding-left: 59px;
+  }
+  .example__images {
+    width: auto;
+    background: none;
+    margin-left: 117px;
+    position: relative;
+    top: 116px;
+  }
+  .example__cats {
+    margin-bottom: 35px;
+  }
+  .example__cat-container--before {
+    width: 365px;
+  }
+  .example__cat-container--after {
+    width: 313px;
+    left: 373px;
+  }
+  .example__cat--after {
+    left: -365px;
+  }
+  .example__form {
+    position: relative;
+    left: 27px;
   }
 }
 .additional {
