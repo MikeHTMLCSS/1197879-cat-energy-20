@@ -275,6 +275,7 @@
 @media (min-width: 1440px) {
     .catalog {
         padding-top: 69px;
+        padding-bottom: 6px;
     }
     .catalog__position {
         width: 1220px;
@@ -286,6 +287,9 @@
         width: 221px;
         padding-left: 24px;
         margin-bottom: 143px;
+    }
+    .catalog__item:nth-last-child(2), .catalog__item:nth-last-child(3), .catalog__item:nth-last-child(4) {
+        margin-bottom: 0;
     }
     .catalog__load {
         width: 241px;
@@ -342,5 +346,8 @@
     .catalog__item-image--rice-500 {
         top: -215px;
         left: -26px;
+    }
+    .catalog__item-data {
+        margin-bottom: 35px;
     }
 }

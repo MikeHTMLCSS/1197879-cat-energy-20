@@ -126,6 +126,7 @@
     .additional::after {
         top: 87.5px;
         left: calc(50% + 354px);
+        width: calc(50% - 354px);
     }
     .additional__title {
         width: 671px;
@@ -219,5 +220,86 @@
             background-image: url('../img/gift-photo-tablet@2x.jpg');
             background-size: 100%;
         }
+    }
+}
+@media (min-width: 1440px) {
+    .additional {
+        padding-bottom: 17px;
+    }
+    .additional::before {
+        width: calc(50% - 650px);
+        left: 0;
+        top: 90px;
+    }
+    .additional::after {
+        top: 89.5px;
+        left: calc(50% + 610px);
+        width: calc(50% - 610px);
+        height: 3.5px;
+    }
+    .additional__title {
+        font-size: 36px;
+        line-height: 36px;
+        width: 1220px;
+        padding-left: 0;
+        margin-bottom: 80px;
+    }
+    .additional__title::after {
+        top: 5.5px;
+    }
+    .additional__position {
+        width: 1220px;
+        margin: 0 auto;
+        display: flex;
+    }
+    .additional__list {
+        width: 895px;
+        margin-right: 80px;
+    }
+    .additional__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        border-right: 0;
+        border-left: 0;
+        padding-left: 0;
+        padding-bottom: 16px;
+        padding-top: 15px;
+        padding-right: 0;
+    }
+    .additional__information {
+        width: auto;
+        margin-bottom: 0;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+    .additional__name {
+        margin-bottom: 0;
+    }
+    .additional__data {
+        margin-bottom: 0;
+        width: 326px;
+        margin-top: 5px;
+    }
+    .additional__cost {
+        width: 81px;
+    }
+    .additional__order {
+        width: 244px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .additional__gift {
+        width: 245px;
+        height: 102px;
+        padding: 0;
+        text-align: center;
+        padding-top: 187px;
+        background-image: url(../img/gift-photo-desktop@1x.jpg);
+    }
+    .additional__gift::before {
+        left: 96px;
     }
 }

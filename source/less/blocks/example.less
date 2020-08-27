@@ -236,6 +236,7 @@
         border-radius: 50%;
         background-color: @light;
         border: 1px solid @table;
+        box-shadow: 0 0 5px -3px;
     }
     .example__input::after {
         content: "";
@@ -263,6 +264,17 @@
         border: none;
         padding-top: 29px;
         background-image: linear-gradient(@light 165px, @index-background 165px);
+        position: relative;
+    }
+    .example::before {
+        content: "";
+        display: block;
+        height: 455px;
+        width: calc(50% - 324px);
+        position: absolute;
+        background-color: @example;
+        top: 172px;
+        left: calc(50% + 324px);
     }
     .example__position {
         display: flex;
@@ -316,6 +328,7 @@
     .example__cat-container--after {
         width: 313px;
         left: 373px;
+        position: relative;
     }
     .example__cat--after {
         left: -365px;
