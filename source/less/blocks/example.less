@@ -29,23 +29,16 @@
     display: flex;
     justify-content: space-between;
     width: 280px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 .example__datum {
-    width: 124px;
+    width: 122px;
     text-align: center;
     padding-top: 17px;
     position: relative;
-}
-.example__datum::after {
-    content: "";
-    display: block;
-    width: 122px;
-    height: 54px;
-    border: 1px solid @table;
-    position: absolute;
-    top: 1px;
     border-radius: 3px;
+    border: 1px solid @table;
+    height: 37px;
 }
 .example__value {
     font-family: 'Oswald', Arial, sans-serif;
@@ -61,6 +54,8 @@
     font-size: 12px;
     line-height: 12px;
     background-color: @example;
+    width: 124px - 36px;
+    margin: 0 auto;
 }
 .example__cost {
     font-family: 'Oswald', Arial, sans-serif;
@@ -132,7 +127,7 @@
     .example__story {
         width: auto;
         margin: 0;
-        margin-bottom: 229px;
+        margin-bottom: 219px;
     }
     .example__title {
         font-family: 'Oswald', Arial, sans-serif;
@@ -169,6 +164,7 @@
     .example__datum {
         padding-top: 13px;
         width: 162px;
+        height: 55px;
     }
     .example__value {
         font-size: 30px;
@@ -178,6 +174,13 @@
     .example__result {
         font-size: 14px;
         line-height: 14px;
+        background-color: @light;
+    }
+    .example__result--weigth {
+        width: 114px;
+    }
+    .example__result--time {
+        width: 142px;
     }
     .example__cost {
         font-size: 20px;
@@ -312,10 +315,13 @@
         width: auto;
     }
     .example__data {
-        margin-bottom: 45px;
+        margin-bottom: 52px;
     }
     .example__value {
         margin-bottom: 14px;
+    }
+    .example__result {
+        background-color: @footer;
     }
     .example__cost {
         width: auto;
