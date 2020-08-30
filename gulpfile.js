@@ -80,6 +80,12 @@ exports.default = gulp.series(
   styles, server, watcher
 );
 
-exports.build = gulp.series(
+const build = gulp.series(
   delFunction, copy, styles
+);
+
+exports.build = build;
+
+exports.start = gulp.series(
+  build, server, watcher
 );
