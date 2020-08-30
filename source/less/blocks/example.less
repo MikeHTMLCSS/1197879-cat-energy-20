@@ -35,6 +35,17 @@
     width: 124px;
     text-align: center;
     padding-top: 17px;
+    position: relative;
+}
+.example__datum::after {
+    content: "";
+    display: block;
+    width: 122px;
+    height: 54px;
+    border: 1px solid @table;
+    position: absolute;
+    top: 1px;
+    border-radius: 3px;
 }
 .example__value {
     font-family: 'Oswald', Arial, sans-serif;
@@ -49,6 +60,7 @@
     font-weight: normal;
     font-size: 12px;
     line-height: 12px;
+    background-color: @example;
 }
 .example__cost {
     font-family: 'Oswald', Arial, sans-serif;
